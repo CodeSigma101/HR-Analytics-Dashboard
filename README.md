@@ -1,4 +1,5 @@
-# Achievo for Naivas - Retail Operations Dashboard
+# Achievo for Naivas - HR Analytics Dashboard
+#### App Link: https://hr-analytics-dashboard-awf4rpedxfnatr7ylrses9.streamlit.app/
 
 This is a dashboard built for Achievo Limited to manage staff for Naivas Supermarket.
 
