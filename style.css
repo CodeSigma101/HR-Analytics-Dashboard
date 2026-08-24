@@ -1,129 +1,81 @@
-/* ===== NAIVAS + ACHIEVO BRAND COLORS =====
-Naivas Red: #E30613
-Naivas Navy: #0A1931
-Achievo Orange: #FF6B35
-*/
-
-/* Base */
-html, body, [data-testid="stAppViewContainer"] {
+/* FORCE LIGHT THEME */
+.stApp {
     background-color: #FFFFFF!important;
     color: #0A1931!important;
 }
 
 /* Sidebar */
-[data-testid="stSidebar"] {
-    background-color: #F8F9FA!important;
-    border-right: 3px solid #E30613;
-    min-width: 320px!important;
+section[data-testid="stSidebar"] {
+    background-color: #FFFFFF!important;
+    border-right: 2px solid #E30613;
 }
-[data-testid="stSidebar"] * {
+
+section[data-testid="stSidebar"] * {
     color: #0A1931!important;
 }
 
-/* ===== FIX FOR FILTERS OVERFLOW - THIS IS YOUR BUG ===== */
-[data-testid="stMultiSelect"] {
-    background-color: white!important;
-    border-radius: 8px!important;
-    border: 1px solid #E5E7EB!important;
-}
-
-/* Make the red tags smaller and wrap properly */
-[data-testid="stMultiSelect"] span {
-    background-color: #E30613!important;
-    color: white!important;
-    font-size: 11px!important;
-    padding: 2px 6px!important;
-    border-radius: 4px!important;
-    max-width: 120px!important;
-    white-space: nowrap!important;
-    overflow: hidden!important;
-    text-overflow: ellipsis!important;
-}
-
-/* Prevent filter container from growing huge */
-[data-testid="stSidebar"] [data-testid="stVerticalBlock"] {
-    gap: 0.5rem!important;
-}
-
-[data-testid="stMultiSelect"] div {
-    max-height: 120px!important;
-    overflow-y: auto!important;
-    flex-wrap: wrap!important;
-}
-
-/* Label for filters */
-[data-testid="stSidebar"] label {
-    font-weight: 700!important;
-    font-size: 13px!important;
+/* All inputs, dropdowns, multiselect */
+div[data-baseweb="select"] > div {
+    background-color: #FFFFFF!important;
     color: #0A1931!important;
-    margin-top: 10px!important;
+    border: 1px solid #DEE2E6!important;
 }
 
-/* Header */
-h1 {
+div[data-baseweb="select"] span {
     color: #0A1931!important;
-    font-weight: 800!important;
-}
-h2, h3 {
-    color: #0A1931!important;
-    font-weight: 700!important;
 }
 
-/* KPI Cards */
+/* Fix black boxes you see in screenshot */
+.stSelectbox,.stMultiSelect {
+    background-color: #FFFFFF!important;
+}
+
+div[data-testid="stFileUploader"] {
+    background-color: #FFFFFF!important;
+    border: 2px dashed #E30613!important;
+}
+
+div[data-testid="stFileUploader"] * {
+    color: #0A1931!important;
+}
+
+/* Metrics cards */
 div[data-testid="stMetric"] {
-    background: white!important;
-    border: 1px solid #E5E7EB!important;
-    border-left: 6px solid #E30613!important;
-    border-radius: 12px!important;
-    padding: 18px!important;
-    box-shadow: 0 4px 12px rgba(227,6,19,0.08)!important;
+    background-color: #FFFFFF!important;
+    border: 1px solid #E9ECEF;
+    border-left: 4px solid #E30613;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+div[data-testid="stMetricLabel"] {
+    color: #6C757D!important;
+}
+
+div[data-testid="stMetricValue"] {
+    color: #0A1931!important;
+    font-weight: 700;
 }
 
 /* Tabs */
+button[data-baseweb="tab"] {
+    background-color: #FFFFFF!important;
+    color: #6C757D!important;
+}
+
 button[data-baseweb="tab"][aria-selected="true"] {
     background-color: #E30613!important;
-    color: white!important;
-    border-radius: 8px!important;
-    font-weight: 700!important;
+    color: #FFFFFF!important;
+    border-radius: 6px;
 }
 
-/* Buttons */
-.stButton>button {
-    background-color: #E30613!important;
-    color: white!important;
-    border-radius: 8px!important;
-    font-weight: 700!important;
-    border: none!important;
+/* Headers */
+h1, h2, h3 {
+    color: #0A1931!important;
 }
 
-/* Uploader */
-[data-testid="stFileUploader"] {
-    background-color: white!important;
-    border: 2px dashed #FF6B35!important;
-    border-radius: 12px!important;
-}
-
-/* SLA Boxes */
-.sla-red {
-    background: #E30613;
-    color: white!important;
-    padding: 12px;
-    border-radius: 8px;
-    font-weight: 600;
-    font-size: 13px;
-}
-.sla-navy {
-    background: #0A1931;
-    color: white!important;
-    padding: 12px;
-    border-radius: 8px;
-    margin-top: 10px;
-    font-weight: 600;
-    font-size: 13px;
-}
-.sla-red *, .sla-navy * {
-    color: white!important;
-}
-.title-accent {
-    color: #E30613;
+/* Dataframes */
+div[data-testid="stDataFrame"] {
+    background-color: #FFFFFF!important;
 }
